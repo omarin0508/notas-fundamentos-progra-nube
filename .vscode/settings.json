@@ -1,0 +1,12 @@
+{
+  "markdown-pdf.convertOnSave": true,
+  "markdown-pdf.type": [
+    "pdf"
+  ],
+  "markdown-pdf.format": "Letter",
+  "markdown-pdf.margin.top": "1cm",
+  "markdown-pdf.margin.bottom": "1cm",
+  "markdown-pdf.margin.right": "1cm",
+  "markdown-pdf.margin.left": "1cm",
+  "markdown-pdf.executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+}
