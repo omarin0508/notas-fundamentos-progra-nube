@@ -16,7 +16,9 @@ Tengo la máquina pero debo rellenarla.
 
 Concepto relacionado también , el tercerizar lo físico y como esto viene a revolucionar la forma de trabajo donde ya no es necesario montar aquellas guardias junto a equipos para dar soprote. 
 
-Vimos las diferentes formas de servicios que podemos tener de lo que se puede ofrecer por los proveedores de servicios en la nube, la clase pasada vimos 1) IaaS que es el servicio mas basico, 
+Vimos las diferentes formas de servicios que podemos tener de lo que se puede ofrecer por los proveedores de servicios en la nube, la clase pasada vimos 
+
+1) IaaS que es el servicio mas basico, 
 
 Adicionalmente, 
 
@@ -28,7 +30,7 @@ Nota: en mi caso ya uso Vercel para la aplicacion Web que hice para ingenieria d
 
 En este modelo de trabajo desarrollo en VSCode, persisto informacion , auth, login, en Supabase, despliego en Vercel. 
 
-3)PaaS : Este corresponde a Software as a Service, es el producto final, lo más alto, se usa la aplicacion, no se programa ni configura nada, ejemplos de esta modalidad son Google Drive, Gmail, Dropbox, por ejemplo. 
+3) SaaS : Este corresponde a Software as a Service, es el producto final, lo más alto, se usa la aplicacion, no se programa ni configura nada, ejemplos de esta modalidad son Google Drive, Gmail, Dropbox, por ejemplo. 
 
 Estudiamos las posibilidades de configuaraciones desde la basica en su momento que fue solo local, o bien todo en servicios en la nube y los sistemas hibridos. Todo dependerá de las condiones economico politicas en caso de los gobiernos.  La nube hibrida da mas control, seguridad, flexibilidad. 
 
