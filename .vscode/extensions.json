@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "yzane.markdown-pdf",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "ms-azuretools.vscode-docker",
+    "vscjava.vscode-java-pack",
+    "vmware.vscode-boot-dev-pack"
+  ]
+}
