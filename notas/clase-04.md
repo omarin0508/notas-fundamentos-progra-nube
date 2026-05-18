@@ -2,7 +2,7 @@
 
 **Alumno:** Oscar Marín Zamora  
 **Curso:** Fundamentos de Programación en la Nube  
-**Fecha:** Pendiente
+**Fecha:** 11-mayo-2026
 
 ---
 
@@ -87,3 +87,30 @@ Que es:
       
 
 
+---
+
+## Evidencia técnica de fechas del documento
+
+Esta sección registra metadatos locales del archivo fuente y de los PDF generados para la clase 4. Su propósito es documentar que las notas de esta clase fueron trabajadas desde el lunes 11 de mayo de 2026, antes de la fecha límite oficial de entrega.
+
+### Archivo fuente Markdown
+
+| Archivo | Fecha de creación | Última modificación registrada | Observación |
+| --- | --- | --- | --- |
+| `notas/clase-04.md` | 1 de mayo de 2026, 15:28:21 | 17 de mayo de 2026, 21:17:57 | Archivo fuente de las notas de clase 4. |
+
+### PDF histórico exportado en carpeta general
+
+| Archivo | Fecha de creación del archivo | Última modificación del archivo | Metadata interna del PDF |
+| --- | --- | --- | --- |
+| `pdf/clase-04.pdf` | 11 de mayo de 2026, 18:15:14 | 11 de mayo de 2026, 21:37:05 | `CreationDate` y `ModDate`: 11 de mayo de 2026, 21:37:05 hora Costa Rica. |
+
+### PDF exportado en carpeta de notas
+
+| Archivo | Fecha de creación del archivo | Última modificación del archivo | Metadata interna del PDF |
+| --- | --- | --- | --- |
+| `notas/clase-04.pdf` | 17 de mayo de 2026, 21:17:59 | 17 de mayo de 2026, 21:17:59 | `CreationDate` y `ModDate`: 17 de mayo de 2026, 21:17:59 hora Costa Rica. |
+
+### Interpretación
+
+Los metadatos anteriores muestran que existía una exportación PDF de la clase 4 desde el lunes 11 de mayo de 2026 a las 21:37:05 hora Costa Rica. Esto evidencia que las notas de clase 4 ya habían sido trabajadas antes de la fecha límite oficial de entrega.

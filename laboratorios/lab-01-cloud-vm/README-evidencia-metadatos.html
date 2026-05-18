@@ -1,0 +1,210 @@
+<!doctype html><html><head><meta charset="utf-8"><base href="file:///C:/Users/Oscar%20Marin/notas-fundamentos-nube/laboratorios/lab-01-cloud-vm/"><title>Laboratorio 1 - Evidencia de metadatos</title><style>
+  @page { size: Letter; margin: 1cm; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #111; }
+  h1 { font-size: 25px; } h2 { font-size: 19px; margin-top: 26px; border-bottom: 1px solid #ccc; padding-bottom: 4px; } h3 { font-size: 15px; margin-top: 18px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; page-break-inside: avoid; }
+  th, td { border: 1px solid #999; padding: 6px; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: #f2f2f2; }
+  code { font-family: Consolas, monospace; font-size: 11px; }
+  img { max-width: 100%; height: auto; display: block; margin: 8px 0; page-break-inside: avoid; }
+  figure { margin: 14px 0; page-break-inside: avoid; } figcaption { font-size: 10px; color: #555; }
+  hr { border: 0; border-top: 1px solid #ccc; margin: 22px 0; }
+  li { margin: 3px 0; }
+</style></head><body><h1>Laboratorio 1 - Comparación de tipos de nube y proveedores cloud (VM)</h1>
+<ul>
+<li><strong>Curso:</strong> Fundamentos de Programación en la Nube</li>
+<li><strong>Estudiante:</strong> Oscar Marín Zamora</li>
+<li><strong>Tema:</strong> Tipos de nube, proveedores cloud y máquinas virtuales</li>
+<li><strong>Estado:</strong> Finalizado</li>
+<li><strong>Fecha:</strong> 15 de mayo de 2026</li>
+</ul>
+<hr>
+<h2>Objetivos</h2>
+<h3>Objetivo general</h3>
+<p>Analizar los principales tipos de nube, comparar proveedores de nube pública y relacionar sus servicios con el uso de máquinas virtuales en escenarios reales.</p>
+<h3>Objetivos específicos</h3>
+<ul>
+<li>Identificar las diferencias entre nube pública, privada, híbrida y comunitaria.</li>
+<li>Comparar proveedores cloud como AWS, Microsoft Azure y Google Cloud.</li>
+<li>Describir un escenario hipotético donde se requiera implementar una máquina virtual.</li>
+<li>Comparar opciones de máquinas virtuales según recursos, costos y facilidad de uso.</li>
+<li>Documentar el proceso de virtualización local como práctica base para comprender entornos cloud.</li>
+<li>Registrar evidencias del proceso mediante capturas y observaciones.</li>
+</ul>
+<hr>
+<h2>Parte 1: Tipos de nube</h2>
+<h3>Nube pública</h3>
+<p>La nube pública es un modelo donde los recursos tecnológicos son ofrecidos por un proveedor externo a través de internet. Los usuarios pueden acceder a servicios como almacenamiento, bases de datos, redes, aplicaciones y máquinas virtuales sin administrar directamente la infraestructura física.</p>
+<p><strong>Ejemplos:</strong> AWS, Microsoft Azure, Google Cloud.</p>
+<p><strong>Ventajas:</strong></p>
+<ul>
+<li>No requiere comprar servidores propios.</li>
+<li>Permite pagar según el consumo.</li>
+<li>Facilita el crecimiento rápido de recursos.</li>
+<li>El proveedor se encarga de gran parte del mantenimiento.</li>
+</ul>
+<p><strong>Desventajas:</strong></p>
+<ul>
+<li>Depende de la conexión a internet.</li>
+<li>Puede generar costos variables si no se controla el consumo.</li>
+<li>Requiere configurar correctamente la seguridad.</li>
+</ul>
+<h3>Nube privada</h3>
+<p>La nube privada es utilizada por una sola organización. Puede estar ubicada dentro de la empresa o ser administrada por un tercero, pero sus recursos no se comparten con otros clientes.</p>
+<p><strong>Ventajas:</strong></p>
+<ul>
+<li>Mayor control sobre la infraestructura.</li>
+<li>Mejor adaptación a políticas internas.</li>
+<li>Puede ofrecer mayor privacidad para datos sensibles.</li>
+</ul>
+<p><strong>Desventajas:</strong></p>
+<ul>
+<li>Mayor costo de implementación.</li>
+<li>Requiere personal técnico especializado.</li>
+<li>Menor flexibilidad inicial en comparación con la nube pública.</li>
+</ul>
+<h3>Nube híbrida</h3>
+<p>La nube híbrida combina servicios de nube pública y nube privada. Permite mantener ciertos datos o sistemas en infraestructura privada y utilizar servicios públicos para otras necesidades.</p>
+<p><strong>Ventajas:</strong></p>
+<ul>
+<li>Balance entre control y escalabilidad.</li>
+<li>Permite mover cargas de trabajo según la necesidad.</li>
+<li>Es útil para empresas con sistemas existentes que migran gradualmente a la nube.</li>
+</ul>
+<p><strong>Desventajas:</strong></p>
+<ul>
+<li>Puede ser más compleja de administrar.</li>
+<li>Requiere buena integración entre ambientes.</li>
+<li>La seguridad debe manejarse de forma coordinada.</li>
+</ul>
+<h3>Nube comunitaria</h3>
+<p>La nube comunitaria es compartida por varias organizaciones con necesidades similares, por ejemplo instituciones educativas, entidades gubernamentales o empresas de un mismo sector.</p>
+<p><strong>Ventajas:</strong></p>
+<ul>
+<li>Permite compartir costos.</li>
+<li>Atiende necesidades comunes de seguridad o cumplimiento.</li>
+<li>Facilita la colaboración entre organizaciones relacionadas.</li>
+</ul>
+<p><strong>Desventajas:</strong></p>
+<ul>
+<li>Menos flexible que una nube pública.</li>
+<li>Requiere acuerdos claros entre participantes.</li>
+<li>Puede tener disponibilidad limitada según la comunidad.</li>
+</ul>
+<hr>
+<h2>Parte 2: Proveedores de nube pública</h2>
+<h3>Amazon Web Services (AWS)</h3>
+<p>AWS es uno de los proveedores de nube pública más utilizados. Ofrece servicios de cómputo, almacenamiento, redes, bases de datos, inteligencia artificial, seguridad y monitoreo.</p>
+<p><strong>Servicio de máquinas virtuales:</strong> Amazon EC2.</p>
+<p><strong>Características principales:</strong></p>
+<ul>
+<li>Amplia variedad de tipos de instancia.</li>
+<li>Opciones de pago por uso, instancias reservadas y planes de ahorro.</li>
+<li>Integración con servicios como S3, VPC, IAM y CloudWatch.</li>
+</ul>
+<h3>Microsoft Azure</h3>
+<p>Microsoft Azure es la plataforma cloud de Microsoft. Es muy utilizada en empresas que trabajan con Windows Server, Active Directory, Microsoft 365, SQL Server y herramientas empresariales de Microsoft.</p>
+<p><strong>Servicio de máquinas virtuales:</strong> Azure Virtual Machines.</p>
+<p><strong>Características principales:</strong></p>
+<ul>
+<li>Buena integración con tecnologías Microsoft.</li>
+<li>Soporte para Linux y Windows.</li>
+<li>Opciones de redes, seguridad, monitoreo y escalabilidad.</li>
+</ul>
+<h3>Google Cloud Platform (GCP)</h3>
+<p>Google Cloud Platform es la plataforma de nube de Google. Destaca en análisis de datos, inteligencia artificial, contenedores, redes globales y servicios administrados.</p>
+<p><strong>Servicio de máquinas virtuales:</strong> Compute Engine.</p>
+<p><strong>Características principales:</strong></p>
+<ul>
+<li>Buen rendimiento de red.</li>
+<li>Integración con Kubernetes y servicios de datos.</li>
+<li>Opciones flexibles de configuración de máquinas virtuales.</li>
+</ul>
+<hr>
+<h2>Parte 3: Escenario hipotético de VM</h2>
+<p>Una pequeña empresa necesita publicar una aplicación web interna para que su equipo pueda registrar información de clientes y consultar reportes básicos. La empresa no desea comprar servidores físicos porque el uso inicial será pequeño, pero espera que el sistema pueda crecer con el tiempo.</p>
+<p>Para este caso, una máquina virtual en la nube sería una opción adecuada porque permite:</p>
+<ul>
+<li>Instalar un sistema operativo según las necesidades del proyecto.</li>
+<li>Configurar CPU, memoria RAM y disco de acuerdo con la carga esperada.</li>
+<li>Aumentar recursos si la aplicación crece.</li>
+<li>Acceder al servidor de forma remota.</li>
+<li>Pagar únicamente por los recursos utilizados.</li>
+</ul>
+<p>Una configuración inicial podría incluir:</p>
+<table><thead><tr><th>Recurso</th><th>Configuración hipotética</th></tr></thead><tbody><tr><td>Sistema operativo</td><td>Ubuntu Server LTS</td></tr><tr><td>CPU</td><td>1 o 2 vCPU</td></tr><tr><td>RAM</td><td>2 GB a 4 GB</td></tr><tr><td>Disco</td><td>30 GB SSD</td></tr><tr><td>Uso principal</td><td>Aplicación web interna</td></tr><tr><td>Acceso</td><td>SSH</td></tr></tbody></table>
+<hr>
+<h2>Parte 4: Comparación de VM</h2>
+<table><thead><tr><th>Criterio</th><th>AWS EC2</th><th>Azure Virtual Machines</th><th>Google Compute Engine</th></tr></thead><tbody><tr><td>Servicio principal</td><td>EC2</td><td>Virtual Machines</td><td>Compute Engine</td></tr><tr><td>Sistemas operativos</td><td>Linux y Windows</td><td>Linux y Windows</td><td>Linux y Windows</td></tr><tr><td>Escalabilidad</td><td>Alta</td><td>Alta</td><td>Alta</td></tr><tr><td>Modelo de pago</td><td>Pago por uso, reservas y ahorros</td><td>Pago por uso y reservas</td><td>Pago por uso y descuentos automáticos</td></tr><tr><td>Facilidad inicial</td><td>Media</td><td>Media</td><td>Media</td></tr><tr><td>Integración destacada</td><td>Servicios AWS</td><td>Ecosistema Microsoft</td><td>Datos, red y Kubernetes</td></tr><tr><td>Uso recomendado</td><td>Ambientes flexibles y variados</td><td>Empresas con tecnologías Microsoft</td><td>Datos, contenedores y servicios modernos</td></tr></tbody></table>
+<h3>Análisis breve</h3>
+<p>Los tres proveedores permiten crear máquinas virtuales con características similares: selección de sistema operativo, recursos configurables, acceso remoto, redes y reglas de seguridad. La elección depende del contexto del proyecto, el presupuesto, la experiencia del equipo y los servicios adicionales que se necesiten.</p>
+<p>Para una empresa que ya utiliza Microsoft 365 o Windows Server, Azure puede ser una opción natural. Para proyectos con mucha variedad de servicios cloud, AWS ofrece un ecosistema muy amplio. Para proyectos relacionados con análisis de datos, contenedores o herramientas de Google, GCP puede ser conveniente.</p>
+<hr>
+<h2>Parte 5: Virtualización local</h2>
+<p>La virtualización local permite crear una máquina virtual en una computadora personal. Esta práctica ayuda a comprender conceptos que también se usan en la nube, como asignación de CPU, memoria RAM, almacenamiento, instalación de sistemas operativos y administración de recursos.</p>
+<h3>Software de virtualización utilizado</h3>
+<ul>
+<li><strong>Software:</strong> Oracle VM VirtualBox</li>
+<li><strong>Versión:</strong> VirtualBox 7.2.8</li>
+<li><strong>Sistema operativo anfitrión:</strong> Windows</li>
+<li><strong>Sistema operativo invitado:</strong> Ubuntu 26.04 Desktop</li>
+</ul>
+<h3>Evidencia 1: descarga del software de virtualización</h3>
+<p>Captura de la página oficial de descarga de VirtualBox.</p>
+<figure><img src="evidencias/01-descarga-virtualbox.png" alt="Descarga de VirtualBox"><figcaption>Descarga de VirtualBox</figcaption></figure>
+<h3>Evidencia 2: descarga de Ubuntu</h3>
+<p>Captura de la página oficial de descarga de Ubuntu Desktop, sistema operativo seleccionado para la máquina virtual.</p>
+<figure><img src="evidencias/02-descarga-ubuntu.png" alt="Descarga de Ubuntu"><figcaption>Descarga de Ubuntu</figcaption></figure>
+<h3>Evidencia 3: creación de la máquina virtual</h3>
+<p>Captura del asistente de VirtualBox donde se define el nombre de la máquina virtual, la imagen ISO y el sistema operativo invitado.</p>
+<figure><img src="evidencias/03-nombre-maquina-virtual.png" alt="Creación de la máquina virtual"><figcaption>Creación de la máquina virtual</figcaption></figure>
+<h3>Evidencia 4: configuración de CPU, RAM y disco</h3>
+<p>Captura de la asignación de recursos de hardware para la VM: memoria RAM, cantidad de CPU y tamaño de disco.</p>
+<figure><img src="evidencias/04-parametros-maquina-virtual.png" alt="Configuración de hardware"><figcaption>Configuración de hardware</figcaption></figure>
+<h3>Evidencia 5: máquina virtual creada en VirtualBox</h3>
+<p>Captura del administrador de VirtualBox donde se observa la VM creada con sus recursos principales configurados.</p>
+<figure><img src="evidencias/05-maquina-virtual-lab1.png" alt="Máquina virtual creada"><figcaption>Máquina virtual creada</figcaption></figure>
+<h3>Evidencia 6: instalación de Ubuntu</h3>
+<p>No se cuenta con una captura específica del asistente de instalación. Como evidencia del resultado del proceso, se muestra la máquina virtual con Ubuntu iniciado correctamente en la siguiente sección.</p>
+<p>&lt;!-- Pendiente: evidencias/05-instalacion-ubuntu.png --&gt;</p>
+<h3>Evidencia 7: VM encendida y funcionando</h3>
+<p>Captura de la máquina virtual Ubuntu iniciada correctamente dentro de VirtualBox.</p>
+<figure><img src="evidencias/06-maquina-virtual-instalada.png" alt="VM funcionando"><figcaption>VM funcionando</figcaption></figure>
+<h3>Evidencia 8: terminal Linux</h3>
+<p>Captura de la terminal de Linux abierta dentro de Ubuntu. Esta evidencia valida que el sistema operativo invitado está operativo y listo para ejecutar comandos.</p>
+<figure><img src="evidencias/07-maquina-virtual-terminal.png" alt="Terminal Linux"><figcaption>Terminal Linux</figcaption></figure>
+<hr>
+<h2>Parte 6: Comparación y conclusión</h2>
+<p>La virtualización local y las máquinas virtuales en la nube tienen conceptos en común. En ambos casos se asignan recursos como CPU, memoria RAM, disco y sistema operativo. También se requiere administrar acceso, seguridad y uso de recursos.</p>
+<p>La principal diferencia es que una VM local depende de la capacidad de la computadora personal, mientras que una VM en la nube utiliza infraestructura de un proveedor externo. En la nube es más sencillo aumentar recursos, crear nuevas instancias, respaldar información y acceder desde diferentes ubicaciones.</p>
+<p>En conclusión, las máquinas virtuales son una base importante para comprender la computación en la nube. Permiten practicar conceptos de infraestructura, sistemas operativos, redes y administración de servicios. Además, comparar proveedores cloud ayuda a tomar mejores decisiones según el tipo de proyecto, presupuesto y necesidades técnicas.</p>
+<hr>
+<h2>Evidencias pendientes</h2>
+<ul>
+<li>[x] Captura de descarga del software de virtualización.</li>
+<li>[x] Captura de descarga de Ubuntu.</li>
+<li>[x] Captura de creación de la VM.</li>
+<li>[x] Captura de configuración de CPU, RAM y disco.</li>
+<li>[x] Captura de VM creada en VirtualBox.</li>
+<li>[ ] Captura específica del asistente de instalación de Ubuntu.</li>
+<li>[x] Captura de VM encendida y funcionando.</li>
+<li>[x] Captura de terminal Linux.</li>
+<li>[x] Datos finales del software usado.</li>
+<li>[x] Revisión general de formato antes de exportar a PDF.</li>
+</ul>
+<hr>
+<h2>Problemas encontrados y solución aplicada</h2>
+<table><thead><tr><th>Problema</th><th>Causa probable</th><th>Solución aplicada</th></tr></thead><tbody><tr><td>El PDF no mostraba todas las evidencias.</td><td>El PDF había sido generado antes de guardar los cambios finales del README.</td><td>Se guardó nuevamente el archivo Markdown para regenerar el PDF actualizado.</td></tr><tr><td>No se cuenta con captura específica del asistente de instalación de Ubuntu.</td><td>La captura no fue registrada durante ese paso.</td><td>Se dejó indicado como pendiente y se incluyó evidencia del sistema Ubuntu funcionando después de la instalación.</td></tr></tbody></table>
+<h3>Observaciones</h3>
+<p>El laboratorio queda documentado con evidencias reales disponibles en la carpeta <code>evidencias/</code>. Las rutas usadas son relativas para mantener compatibilidad con VS Code Preview, Markdown PDF y GitHub Markdown.</p>
+<hr>
+<h2>Evidencia técnica de fechas del documento</h2>
+<p>Esta sección registra metadatos locales del archivo fuente y de los PDF generados para el Laboratorio 1. Su propósito es documentar la existencia y generación del trabajo antes de la fecha límite oficial de entrega.</p>
+<h3>Archivo fuente Markdown</h3>
+<table><thead><tr><th>Archivo</th><th>Fecha de creación</th><th>Última modificación</th><th>Observación</th></tr></thead><tbody><tr><td><code>laboratorios/lab-01-cloud-vm/README.md</code></td><td>14 de mayo de 2026, 23:14:14</td><td>15 de mayo de 2026, 12:21:35</td><td>Archivo fuente del laboratorio usado para documentar el contenido y evidencias.</td></tr></tbody></table>
+<h3>PDF generado desde el README del laboratorio</h3>
+<table><thead><tr><th>Archivo</th><th>Fecha de creación del archivo</th><th>Última modificación del archivo</th><th>Metadata interna del PDF</th></tr></thead><tbody><tr><td><code>laboratorios/lab-01-cloud-vm/README.pdf</code></td><td>14 de mayo de 2026, 23:18:58</td><td>15 de mayo de 2026, 12:05:04</td><td><code>CreationDate</code> y <code>ModDate</code>: 15 de mayo de 2026, 12:05:03 hora Costa Rica.</td></tr></tbody></table>
+<h3>PDF final de entrega del Laboratorio 1</h3>
+<table><thead><tr><th>Archivo</th><th>Fecha de creación del archivo</th><th>Última modificación del archivo</th><th>Metadata interna del PDF</th></tr></thead><tbody><tr><td><code>laboratorios/lab-01-cloud-vm/pdf/Lab1_FCN_2026_Oscar_Marin_Zamora.pdf</code></td><td>15 de mayo de 2026, 12:21:01</td><td>15 de mayo de 2026, 12:22:18</td><td><code>CreationDate</code> y <code>ModDate</code>: 15 de mayo de 2026, 12:22:17 hora Costa Rica.</td></tr></tbody></table>
+<h3>Interpretación</h3>
+<p>Los metadatos anteriores muestran que el documento del Laboratorio 1 y su PDF final ya existían el viernes 15 de mayo de 2026 al mediodía, antes de la medianoche de la fecha oficial de entrega. El repositorio Git registra además que la estructura <code>laboratorios/lab-01-cloud-vm/</code> ya existía en el commit <code>09c9379</code> del 14 de mayo de 2026.</p></body></html>

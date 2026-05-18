@@ -1,10 +1,10 @@
 # Laboratorio 1 - Comparación de tipos de nube y proveedores cloud (VM)
 
-**Curso:** Fundamentos de Programación en la Nube  
-**Estudiante:** Oscar Marín Zamora  
-**Tema:** Tipos de nube, proveedores cloud y máquinas virtuales  
-**Estado:** En desarrollo  
-**Fecha:** Pendiente
+- **Curso:** Fundamentos de Programación en la Nube
+- **Estudiante:** Oscar Marín Zamora
+- **Tema:** Tipos de nube, proveedores cloud y máquinas virtuales
+- **Estado:** Finalizado
+- **Fecha:** 15 de mayo de 2026
 
 ---
 
@@ -187,50 +187,58 @@ La virtualización local permite crear una máquina virtual en una computadora p
 
 ### Software de virtualización utilizado
 
-**Software:** Pendiente  
-**Versión:** Pendiente  
-**Sistema operativo anfitrión:** Pendiente  
-**Sistema operativo invitado:** Pendiente
+- **Software:** Oracle VM VirtualBox
+- **Versión:** VirtualBox 7.2.8
+- **Sistema operativo anfitrión:** Windows
+- **Sistema operativo invitado:** Ubuntu 26.04 Desktop
 
-### Evidencia 1: instalación del software de virtualización
+### Evidencia 1: descarga del software de virtualización
 
-Pendiente insertar captura de la instalación del software de virtualización.
+Captura de la página oficial de descarga de VirtualBox.
 
-```markdown
-![Instalación del software de virtualización](./evidencias/instalacion-software-virtualizacion.png)
-```
+![Descarga de VirtualBox](evidencias/01-descarga-virtualbox.png)
 
-### Evidencia 2: creación de la máquina virtual
+### Evidencia 2: descarga de Ubuntu
 
-Pendiente insertar captura de la creación de la VM.
+Captura de la página oficial de descarga de Ubuntu Desktop, sistema operativo seleccionado para la máquina virtual.
 
-```markdown
-![Creación de la máquina virtual](./evidencias/creacion-vm.png)
-```
+![Descarga de Ubuntu](evidencias/02-descarga-ubuntu.png)
 
-### Evidencia 3: configuración de CPU, RAM y disco
+### Evidencia 3: creación de la máquina virtual
 
-Pendiente insertar captura de la configuración de recursos de la VM.
+Captura del asistente de VirtualBox donde se define el nombre de la máquina virtual, la imagen ISO y el sistema operativo invitado.
 
-```markdown
-![Configuración de CPU, RAM y disco](./evidencias/configuracion-cpu-ram-disco.png)
-```
+![Creación de la máquina virtual](evidencias/03-nombre-maquina-virtual.png)
 
-### Evidencia 4: instalación de Linux
+### Evidencia 4: configuración de CPU, RAM y disco
 
-Pendiente insertar captura de la instalación del sistema operativo Linux.
+Captura de la asignación de recursos de hardware para la VM: memoria RAM, cantidad de CPU y tamaño de disco.
 
-```markdown
-![Instalación de Linux](./evidencias/instalacion-linux.png)
-```
+![Configuración de hardware](evidencias/04-parametros-maquina-virtual.png)
 
-### Evidencia 5: VM encendida y funcionando
+### Evidencia 5: máquina virtual creada en VirtualBox
 
-Pendiente insertar captura de la máquina virtual encendida y funcionando.
+Captura del administrador de VirtualBox donde se observa la VM creada con sus recursos principales configurados.
 
-```markdown
-![VM encendida y funcionando](./evidencias/vm-funcionando.png)
-```
+![Máquina virtual creada](evidencias/05-maquina-virtual-lab1.png)
+
+### Evidencia 6: instalación de Ubuntu
+
+No se cuenta con una captura específica del asistente de instalación. Como evidencia del resultado del proceso, se muestra la máquina virtual con Ubuntu iniciado correctamente en la siguiente sección.
+
+<!-- Pendiente: evidencias/05-instalacion-ubuntu.png -->
+
+### Evidencia 7: VM encendida y funcionando
+
+Captura de la máquina virtual Ubuntu iniciada correctamente dentro de VirtualBox.
+
+![VM funcionando](evidencias/06-maquina-virtual-instalada.png)
+
+### Evidencia 8: terminal Linux
+
+Captura de la terminal de Linux abierta dentro de Ubuntu. Esta evidencia valida que el sistema operativo invitado está operativo y listo para ejecutar comandos.
+
+![Terminal Linux](evidencias/07-maquina-virtual-terminal.png)
 
 ---
 
@@ -246,13 +254,16 @@ En conclusión, las máquinas virtuales son una base importante para comprender 
 
 ## Evidencias pendientes
 
-- [ ] Captura de instalación del software de virtualización.
-- [ ] Captura de creación de la VM.
-- [ ] Captura de configuración de CPU, RAM y disco.
-- [ ] Captura de instalación de Linux.
-- [ ] Captura de VM encendida y funcionando.
-- [ ] Agregar datos finales del software usado.
-- [ ] Revisar ortografía y formato antes de exportar a PDF.
+- [x] Captura de descarga del software de virtualización.
+- [x] Captura de descarga de Ubuntu.
+- [x] Captura de creación de la VM.
+- [x] Captura de configuración de CPU, RAM y disco.
+- [x] Captura de VM creada en VirtualBox.
+- [ ] Captura específica del asistente de instalación de Ubuntu.
+- [x] Captura de VM encendida y funcionando.
+- [x] Captura de terminal Linux.
+- [x] Datos finales del software usado.
+- [x] Revisión general de formato antes de exportar a PDF.
 
 ---
 
@@ -260,8 +271,37 @@ En conclusión, las máquinas virtuales son una base importante para comprender 
 
 | Problema | Causa probable | Solución aplicada |
 | --- | --- | --- |
-| Pendiente | Pendiente | Pendiente |
+| El PDF no mostraba todas las evidencias. | El PDF había sido generado antes de guardar los cambios finales del README. | Se guardó nuevamente el archivo Markdown para regenerar el PDF actualizado. |
+| No se cuenta con captura específica del asistente de instalación de Ubuntu. | La captura no fue registrada durante ese paso. | Se dejó indicado como pendiente y se incluyó evidencia del sistema Ubuntu funcionando después de la instalación. |
 
 ### Observaciones
 
-Completar esta sección durante el desarrollo del laboratorio. Registrar errores de instalación, problemas de rendimiento, fallos con la imagen ISO, configuración de red o cualquier ajuste realizado para que la VM funcione correctamente.
+El laboratorio queda documentado con evidencias reales disponibles en la carpeta `evidencias/`. Las rutas usadas son relativas para mantener compatibilidad con VS Code Preview, Markdown PDF y GitHub Markdown.
+
+---
+
+## Evidencia técnica de fechas del documento
+
+Esta sección registra metadatos locales del archivo fuente y de los PDF generados para el Laboratorio 1. Su propósito es documentar la existencia y generación del trabajo antes de la fecha límite oficial de entrega.
+
+### Archivo fuente Markdown
+
+| Archivo | Fecha de creación | Última modificación | Observación |
+| --- | --- | --- | --- |
+| `laboratorios/lab-01-cloud-vm/README.md` | 14 de mayo de 2026, 23:14:14 | 15 de mayo de 2026, 12:21:35 | Archivo fuente del laboratorio usado para documentar el contenido y evidencias. |
+
+### PDF generado desde el README del laboratorio
+
+| Archivo | Fecha de creación del archivo | Última modificación del archivo | Metadata interna del PDF |
+| --- | --- | --- | --- |
+| `laboratorios/lab-01-cloud-vm/README.pdf` | 14 de mayo de 2026, 23:18:58 | 15 de mayo de 2026, 12:05:04 | `CreationDate` y `ModDate`: 15 de mayo de 2026, 12:05:03 hora Costa Rica. |
+
+### PDF final de entrega del Laboratorio 1
+
+| Archivo | Fecha de creación del archivo | Última modificación del archivo | Metadata interna del PDF |
+| --- | --- | --- | --- |
+| `laboratorios/lab-01-cloud-vm/pdf/Lab1_FCN_2026_Oscar_Marin_Zamora.pdf` | 15 de mayo de 2026, 12:21:01 | 15 de mayo de 2026, 12:22:18 | `CreationDate` y `ModDate`: 15 de mayo de 2026, 12:22:17 hora Costa Rica. |
+
+### Interpretación
+
+Los metadatos anteriores muestran que el documento del Laboratorio 1 y su PDF final ya existían el viernes 15 de mayo de 2026 al mediodía, antes de la medianoche de la fecha oficial de entrega. El repositorio Git registra además que la estructura `laboratorios/lab-01-cloud-vm/` ya existía en el commit `09c9379` del 14 de mayo de 2026.
