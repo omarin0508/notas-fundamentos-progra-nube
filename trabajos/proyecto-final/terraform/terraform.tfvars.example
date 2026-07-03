@@ -1,0 +1,10 @@
+# Valores de ejemplo para Oracle Cloud Infrastructure.
+# Copiar este archivo como terraform.tfvars y completar con datos locales reales.
+# No colocar credenciales reales en este archivo de ejemplo.
+
+tenancy_ocid     = "ocid1.tenancy.oc1..example"
+user_ocid        = "ocid1.user.oc1..example"
+fingerprint      = "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00"
+private_key_path = "./oci-api-key/local-api-key/oci_api_key_pkcs8.pem"
+region           = "us-ashburn-1"
+compartment_ocid = "ocid1.compartment.oc1..example"

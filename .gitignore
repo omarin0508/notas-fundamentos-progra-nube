@@ -49,3 +49,19 @@ docker-volumes/
 # Test and coverage output
 coverage/
 test-results/
+
+# Terraform
+.terraform/
+LAB04_ENTREGA/terraform/oci-api-key/
+LAB04_ENTREGA/terraform/keys/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+terraform.tfvars.json
+*.pem
+*.key
+lab4_oci_vm_key
+lab4_oci_vm_key_emanuel
+crash.log
+crash.*.log
+.terraform.lock.hcl
